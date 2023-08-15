@@ -84,62 +84,62 @@ startGameBtn.addEventListener("click", () => {
 
 // not related to game
 
-// const unic = (resultHandler, operation, ...numbers) => {
-// 	const validateNumber = (number) => {
-// 		return isNaN(number) ? 0 : number;
-// 	};
+const unic = (resultHandler, operation, ...numbers) => {
+	const validateNumber = (number) => {
+		return isNaN(number) ? 0 : number;
+	};
 
-// 	let sum = 0;
-// 	for (const num of numbers) {
-// 		if (operation === "ADD") {
-// 			sum += validateNumber(num);
-// 		} else {
-// 			sum -= validateNumber(num);
-// 		}
-// 	}
-// 	resultHandler(sum, "The result after adding all numbers is");
-// };
+	let sum = 0;
+	for (const num of numbers) {
+		if (operation === "ADD") {
+			sum += validateNumber(num);
+		} else {
+			sum -= validateNumber(num);
+		}
+	}
+	resultHandler(sum, "The result after adding all numbers is");
+};
 
-// const subtractUp = function (resultHandler) {
-// 	let sum = 0;
-// 	for (const num of number) {
-// 		// don't use that
-// 		sum -= num;
-// 	}
-// 	resultHandler(sum);
-// };
+const subtractUp = function (resultHandler) {
+	let sum = 0;
+	for (const num of number) {
+		// don't use that
+		sum -= num;
+	}
+	resultHandler(sum);
+};
 
-// const showResult = (showMessage, result) => {
-// 	alert(showMessage + " " + result);
-// };
+const showResult = (showMessage, result) => {
+	alert(showMessage + " " + result);
+};
 
-// unic(
-// 	showResult.bind(this, "the result aftger adding all numbers is:"),
-// 	"ADD",
-// 	1,
-// 	5,
-// 	"fdsa",
-// 	-3,
-// 	6,
-// 	10
-// );
-// unic(
-// 	showResult.bind(this, "the result aftger adding all numbers is:"),
-// 	"ADD",
-// 	1,
-// 	5,
-// 	10,
-// 	-3,
-// 	6,
-// 	10,
-// 	25,
-// 	88
-// );
-// unic(
-// 	showResult.bind(this, "the result aftger subtracting all numbers is:"),
-// 	"SUBTRACT",
-// 	1,
-// 	10,
-// 	15,
-// 	20
-// );
+unic(
+	showResult.bind(this, "the result aftger adding all numbers is:"),
+	"ADD",
+	1,
+	5,
+	"fdsa",
+	-3,
+	6,
+	10
+);
+unic(
+	showResult.bind(this, "the result aftger adding all numbers is:"),
+	"ADD",
+	1,
+	5,
+	10,
+	-3,
+	6,
+	10,
+	25,
+	88
+);
+unic(
+	showResult.bind(this, "the result aftger subtracting all numbers is:"),
+	"SUBTRACT",
+	1,
+	10,
+	15,
+	20
+);
